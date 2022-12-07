@@ -1,7 +1,7 @@
 # Starfall
 00-team-01 Group Project Final
 
-# 12/5/2022 – In-class meeting notes
+## 12/5/2022 – In-class meeting notes
 - Tim will take notes for each session so we’re all on the same page. Will post to Slack, GitHub readme for everyone to reference as needed
 - Team name proposed and agreed on: Starfall
 - Pivoting topic from using weather as geographic predictor of increasing Covid cases --> using Covid cases as geographic predictor of increasing home sales
@@ -12,10 +12,10 @@
         - Juhi works 9-5
         - Tim’s schedule is 24/7 ever-changing chaos as a caregiver, but can generally arrange to be available for meetings/coordinating on any tasks at most times, feel free to contact via text whenever and he can at least respond to keep informed within a half hour
     - Phone numbers:
-        - Joe: 908-566-6499
-        - Juhi: 908-305-0706
-        - Tim: 973-479-2971
-        - Will: 732-492-7641
+        - Joe: 908-XXX-XXXX
+        - Juhi: 908-XXX-XXXX
+        - Tim: 973-XXX-XXXX
+        - Will: 732-XXX-XXXX
 - Current to do list for each of our roles (named as per the course module):
     - Joe (square): GitHub structure setup and sharing
         - Github usernames:
