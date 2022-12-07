@@ -1,7 +1,7 @@
 # Starfall
 00-team-01 Group Project Final
 
-## 12/5/2022 – In-class meeting notes
+### 12/5/2022 – In-class meeting notes
 - Tim will take notes for each session so we’re all on the same page. Will post to Slack, GitHub readme for everyone to reference as needed
 - Team name proposed and agreed on: Starfall
 - Pivoting topic from using weather as geographic predictor of increasing Covid cases --> using Covid cases as geographic predictor of increasing home sales
