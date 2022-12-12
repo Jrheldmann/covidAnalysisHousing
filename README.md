@@ -1,6 +1,26 @@
 # Starfall
 00-team-01 Group Project Final
 
+### 12/7/2022 - In-class meeting notes
+- Tim needs to look into a missing calendar request from Juhi – need to allow permissions for everyone
+    - Resolved during meeting – invites for full calendar permissions sent via email
+- ACS demographic data not avail for 2022 yet; can use 1 year dataset for 2021, 5 year dataset for 2017-2020
+    - Everyone: continue searching for 2022 data from other potential sources
+- For deliverables, let’s have them done for Mondays/Tuesdays so that we can review any issues before needing to submit on Wednesdays
+- Compiling data sources still in progress; Juhi will compile links we’ve put in Slack and some others she’s found; everyone post any additional links in Slack
+- Will is setting up about 4 provisional models for us to use dummy data for testing as 1st segment deliverable
+    - Discussed keeping the coding in Google Collab rather than Jupyter Notebook as per recommendation from Dave & Arin
+- AZ mentioned his group breaking further into pairs for work; we think that doing the same once we get into the detail-oriented work of data cleaning would be a good idea for getting multiple sets of eyes on each set of work as we go
+- Discussed concern about whether Zillow can be considered an authoritative number for real estate
+    - Appears it should be, as many of what we thought might be “competitors” are actually subsidiaries
+- Started discussing some of the issues that we anticipate in data cleaning:
+    - Can see we have plenty of empty rows
+    - There are NINE codes in ACS data for county “urban-ness”; we likely want to collapse those down to perhaps three (urban, suburban, rural)
+    - County names have a number of issues surrounding them:
+        - different naming conventions between government sources vs. Zillow
+        - duplicate county names across different states
+        - spelling inconsistencies
+
 ### 12/5/2022 – In-class meeting notes
 - Tim will take notes for each session so we’re all on the same page. Will post to Slack, GitHub readme for everyone to reference as needed
 - Team name proposed and agreed on: Starfall
