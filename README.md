@@ -14,12 +14,14 @@ Communication happens primarily over slack group channel with emergency contact 
 
 ## Overview 
 
-## Questions we are looking to answer:
+## Questions that we hoped to answer and what we did answer
 
-## Dashboard:
+## Dashboard
 
-## Data Base:
+## Data Base
 
-## Machine Learning:
+## Machine Learning
 
 ## Conclusion
+
+## Technology Used
