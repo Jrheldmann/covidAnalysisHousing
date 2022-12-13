@@ -1,31 +1,25 @@
-# Starfall
-00-team-01 Group Project Final
+![covid-housing](https://github.com/Jrheldmann/Starfall/blob/main/Square_role/readMeResources/covid-housing.png)
+# Covid-19 Impact on Housing Prices in the US
+## Group Members
+ Members     | Role     |    Responsibilities  |
+| ------------- | ------------- | -------- |
+| Juhi          | Database  Lead       | Create databases |
+| Will| Technology Lead         | 	Machine learning model|
+| Tim |Dashboard Lead | Create a dashboard to present the data|
+| Joe| Github Lead | Responsible for updating the repository and ReadMe|
 
-### 12/5/2022 – In-class meeting notes
-- Tim will take notes for each session so we’re all on the same page. Will post to Slack, GitHub readme for everyone to reference as needed
-- Team name proposed and agreed on: Starfall
-- Pivoting topic from using weather as geographic predictor of increasing Covid cases --> using Covid cases as geographic predictor of increasing home sales
-- Scheduling & contact info:
-    - Tim will create and share a Google calendar; will post dates people have said they are unavailable for potential meetings, everyone should be able to update the calendar with any more scheduling blackouts as individual conflicts arise
-    - General weekday work schedules:
-        - Joe & Will work 7-3
-        - Juhi works 9-5
-        - Tim’s schedule is 24/7 ever-changing chaos as a caregiver, but can generally arrange to be available for meetings/coordinating on any tasks at most times, feel free to contact via text whenever and he can at least respond to keep informed within a half hour
-    - Phone numbers:
-        - Joe: 908-XXX-XXXX
-        - Juhi: 908-XXX-XXXX
-        - Tim: 973-XXX-XXXX
-        - Will: 732-XXX-XXXX
-- Current to do list for each of our roles (named as per the course module):
-    - Joe (square): GitHub structure setup and sharing
-        - Github usernames:
-            - Joe: Jrheldmann
-            - Juhi: aggarwaljuh
-            - Tim: tfish110
-            - Will: willenny
-    - Juhi (circle): Database structure mockup
-    - Tim (X): Calendar setup, checking out early quick & dirty data viz in Tableau
-    - Will (triangle): prelim model setup
-    - All: start getting more acquainted with the datasets available from the links we’ve put in slack from CDC, Census Bureau, Zillow
-        - Remember to keep in mind that some of the raw data will need to be standardized, i.e. if one dataset is split into cities and another is split into counties, we will eventually need to group the city-based variables into their respective counties. We should be able to automate this process during data cleaning with a few lines of code.
-        - Late in the meeting we discussed the importance of using housing data from years both pre-Covid AND post-Covid to make a case for home-buying behavior changing when Covid was introduced as a variable, so please keep that in mind when familiarizing ourselves with the datasets.
+### Communication Protocols
+
+Communication happens primarily over slack group channel with emergency contact via direct texts between members.
+
+## Overview 
+
+## Questions we are looking to answer:
+
+## Dashboard:
+
+## Data Base:
+
+## Machine Learning:
+
+## Conclusion
