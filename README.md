@@ -58,7 +58,7 @@ All databases were made sure to have either a FIPs, countyname,Statename, or cou
 ERD:
 ![ERD](https://user-images.githubusercontent.com/109693301/207495541-33df45d6-d182-4eb1-b512-86207fc6ce04.png)
 
-All tables are connected by fips, fips by year and fips by year and month. 
+All tables are connected by fips, fips by year and fips by year and month. This ERD only contains columns we are going to keep.
 
 Needs: Merge data using SQL, finish cleaning data.
 
