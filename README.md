@@ -54,7 +54,14 @@ Originally we got data for years 2017-2021 after first round of ML we removed va
 
 All databases were made sure to have either a FIPs, countyname,Statename, or countyname,StateAbrivation so that FIPS database can be used to join all databases. 
 
-Needs: Merge data using SQL.
+
+ERD:
+![ERD](https://user-images.githubusercontent.com/109693301/207495541-33df45d6-d182-4eb1-b512-86207fc6ce04.png)
+
+All tables are connected by fips, fips by year and fips by year and month. 
+
+Needs: Merge data using SQL, finish cleaning data.
+
 
 ## Machine Learning
 
