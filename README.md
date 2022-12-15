@@ -13,10 +13,16 @@
 Communication happens primarily over slack group channel with emergency contact via direct texts between members.
 
 ## Overview 
+In X role branch
+
 
 ## Questions that we hoped to answer and what we did answer
 
+In X role branch
+
 ## Dashboard
+
+
 
 ## Data Base
 Dependent Variable- Zillow Housing data: https://www.zillow.com/research/data/
@@ -52,19 +58,32 @@ Needs: Find a way to transpose Zillow data into rows.
 Iteration 2:
 Originally we got data for years 2017-2021 after first round of ML we removed variables.
 
-All databases were made sure to have either a FIPs, countyname,Statename, or countyname,StateAbrivation so that FIPS database can be used to join all databases. 
+All databases were made sure to have either a FIPs, countyname,Statename, or countyname,StateAbrivation so that FIPS database can be used to join all databases. After this we have not yet removed the unneeded columns. 
 
 
 ERD:
+
 ![ERD](https://user-images.githubusercontent.com/109693301/207495541-33df45d6-d182-4eb1-b512-86207fc6ce04.png)
 
 All tables are connected by fips, fips by year and fips by year and month. This ERD only contains columns we are going to keep.
+
+For the housing cost Zillow data we used pd.stack() which allowed us to have all cost data to be in rows and indexed by their fips. This allows us to convert time deries data into individual instances of data for each county. We went in and manually changed the names of rows because the issue with stack was that we were not able to minpulate the data after. Finally we broke the dates into months and years to make the fips by year and fips by year and month above. This table is currently under Zillow_int2.csv
+
+All examples of this iterations are currently in  the Circle branch.
 
 Needs: Merge data using SQL, finish cleaning data.
 
 
 ## Machine Learning
 
+Under Triangle Branch
+
 ## Conclusion
 
 ## Technology Used
+
+Pandas
+
+Jupyter notebook
+
+Intended use- Tablau
