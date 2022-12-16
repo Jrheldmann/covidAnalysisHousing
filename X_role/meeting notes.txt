@@ -1,3 +1,21 @@
+12/14/2022 – In-class meeting notes
+- Joe not able to attend – sick with flu ?
+- Before going into group breakouts, Arin demonstrated using the .T function in Pandas to transpose columns/rows to address the issue Juhi was having with the Zillow data’s structure
+o Once we got into breakouts, Juhi found an alternative function that actually worked better for our particular dataset, the .stack function
+o Juhi shared screen to walk through getting the correct columns to act as indexes for the new DataFrame – three pairs of eyes being better than one, we were able to work together to get it working – great teamwork! Issue resolved!
+- Segment 1 deliverable due tonight
+o Checked in with everyone regarding coverage of deliverable requirements; all feeling good about what we have
+- Will walked us through the model as it stands so far
+o Has a good linear regression model working with a small sample of the data, should be good to input full dataset when ready
+o Discussed where to go next from there; group agreed that the complexity and volume of data we are working with justifies shooting for a deep learning model, so building that out to prepare for a full dataset is Will’s current target
+- During mid-class check-in Dave and Arin discussed the need for our databases to be publicly available in the cloud, and for each member to have their own individual username and password to access it
+- Tim brought up his plans on next moves for dashboard looking ahead to Segment 2 deliverables
+o Realized that the discussion from the previous meeting about setting up GeoJSON structure for county data may not be necessary – since plans are to build dashboard with Tableau, there is built-in map functionality there which shouldn’t require the GeoJSON library format
+o Shared screen to try out a quick proof-of-concept map in Tableau with the rural/urban county codes, and did manage to get it working
+* NOTE: in that process we were puzzled by the need to include both the county and state columns, because only including county made large swathes of the map go blank; realized after class this is likely due to duplicate county names across multiple states, so we do need both columns for Tableau to interpret the location data correctly
+- During end of class check-in Dave and Arin mentioned that all of us do need to each submit the Github url in the course module for each project segment
+o They also mentioned that right at the end of the project, each of us needs to clone the whole repository into a new one of our own ownership so that we can each have access to it after the course ends
+
 12/12/2022 – In-class meeting notes
 - Juhi encountered issue with needing to transform column to row data/vice versa
 o Needs help from everyone to find solution to issue: Zillow data not cooperating 
@@ -48,10 +66,10 @@ o General weekday work schedules:
 * Juhi works 9-5
 * Tim’s schedule is 24/7 ever-changing chaos as a caregiver, but can generally arrange to be available for meetings/coordinating on any tasks at most times, feel free to contact via text whenever and he can at least respond to keep informed within a half hour
 o Phone numbers:
-* Joe: 908-XXX-XXXX
-* Juhi: 908-XXX-XXXX
-* Tim: 973-XXX-XXXX
-* Will: 732-XXX-XXXX
+* Joe: 908-566-6499
+* Juhi: 908-305-0706
+* Tim: 973-479-2971
+* Will: 732-492-7641
 - Current to do list for each of our roles (named as per the course module):
 o Joe (square): GitHub structure setup and sharing
 * Github usernames:
