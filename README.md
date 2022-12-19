@@ -79,6 +79,12 @@ We uploaded these 2 dataframes to Mongo.
 
 Needs: Merge these two frames in Mongo.
 
+Iteration 4:
+Pivot I merged the data in SQL not mongo as it was not working. The query is schema.sql. The data was then downloaded and uploaded into Mongodb (currently in the github as mergedata.csv in clean data).
+Mongodb has been found to be shared over the cloud via Atlas. This is currently being tested. 
+
+Needs: Mongodb needs to be shared with others.
+
 ## Machine Learning
 
 ### Linear Regression
