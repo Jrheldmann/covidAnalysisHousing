@@ -96,6 +96,9 @@ Mongodb has been found to be shared over the cloud via Atlas. This is currently 
 
 Needs: Mongodb needs to be shared with others.
 
+Iteration 5:
+As "fips" is needed for the tablau we redid the merge in SQL to include this in the database. The data was then downloaded and uploaded into Mongodb atlas. We then shared this Atlas with everyone in the group.
+
 ## Machine Learning
 
 ### Linear Regression
