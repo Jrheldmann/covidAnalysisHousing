@@ -25,7 +25,7 @@ We were able to retain the county-based COVID case dataset, but shifted the targ
 
 ### Data sources
 
-As previously stated, COVID case data by county was sourced from the CDC. Demographic data by county was sourced from the U.S. Census Bureau, and home sales data by country was sourced from Zillow.
+As previously stated, COVID case data by county was sourced from the CDC. Demographic data by county was sourced from the U.S. Census Bureau, Rural-Urban Continuum Codes were sourced from the U.S. Department of Agriculture, and home sales data by country was sourced from Zillow.
 
 ### Questions to be answered
 
