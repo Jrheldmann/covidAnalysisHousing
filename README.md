@@ -1,4 +1,5 @@
 # Starfall
+Triangle_branch
 
 ## Linear Regression
 Using the sample_data.csv I focused on the "cases" and "Cost" columns. I used the cases as the feature (independent variable) and the Cost as the target (dependent variable). 
@@ -11,5 +12,3 @@ On Dave's suggestion, I scaled the data for cases and Cost and created a new lin
 
 ## Machine Learning
 Next I decided to include all of the columns besides the C_S column, which represented the county and state. A different column labeled "FIPS" is the US postal code for each row so that represents the location of the successfully with a numerical value. Since all other columns were numerical with a wide range of numbers, I decided to scale each column. Then I began creating a basic neural network. As a preliminary value, I would hope that the basic neural network yields an accuracy score of 50% or above. Based on how successful the model it, I will consider using a deep learning model by creating additional layers and neurons. 
-
-
