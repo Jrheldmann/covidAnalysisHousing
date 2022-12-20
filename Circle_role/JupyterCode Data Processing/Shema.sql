@@ -32,11 +32,12 @@ CREATE TABLE demographics (
      PRIMARY KEY (fip_year)
 );
 
-SELECT covidhousing.cost_house, covidhousing.cases,covidhousing.fip_year_month,
+CREATE TABLE Merged AS(
+SELECT covidhousing.cost_house, covidhousing.cases,covidhousing.fip_year_month,demographics.fips,
 demographics.PCIncome,demographics.POPESTIMATE,demographics.mfratio,demographics.popest_male,demographics.popest_fem,
 demographics.median_age_tot, demographics.under5_tot, demographics.age513_tot, demographics.age1544_tot, 
 demographics.age4564_tot, demographics.age65plus_tot, demographics.rucc_2013, demographics.WA, demographics.BA, 
 demographics.IA, demographics.AA, demographics.NA, demographics.TOM, demographics.NH, demographics.H
 FROM covidhousing
 JOIN demographics
-ON covidhousing.fip_year = demographics.fip_year;
+ON covidhousing.fip_year = demographics.fip_year)
