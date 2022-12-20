@@ -1,3 +1,19 @@
+12/19/2022 – In-class meeting notes
+- Health rebound check-in, Joe is feeling better, Juhi’s ankle not broken!
+- Issues with GitHub ReadMes being in conflict – prob a good idea for us each to rename the readme files in our individual branches
+o Also all agreed we’re fine with just keep notes in “main”’s ReadMe
+- Juhi has gotten the database all set in SQL – we need to work on getting it on cloud for everyone to connect to
+o Mongo possibly, or AWS buckets if under data limits?
+o Merged datasets available on Circle_branch, Will can use those in model, Tim can use them in Tableau
+- Dashboard, looking ahead: Juhi heard from Dave & Arin that they do want to see some HTML for that
+o Should be able to build a Flask app and link the Tableau workbook pages in the HTML; not urgent, but need to keep it in mind for later during Seg 3 & 4
+- Note on GitHub – Joe recommends for each of us to upload into the directory folders in each of our branches, will help him keep it organized
+o Also, be aware that because test_branch was created AFTER we cloned the repository, we need to “fetch” that to be able to get onto that branch in GitBash – Joe posted instructions in the group Slack channel
+- Dave came into our breakout and Juhi asked for help with sharing Mongo – outsourced to Arin
+- Will updated the image files of the plots, available on Github
+- Discussed current prelim model results; accuracy is 0 with full dataset, so breaking it up by different metrics seems inevitable; will start with breaking up by RUCC codes
+- GitHub phantom mistake “X_role” branch successfully deleted; process Joe posted for connecting to the Test_branch should work fine for everyone now
+- Juhi successfully worked with Arin to get Mongo connection set up – she posted the connection string that we will each need to access it in Slack
 12/14/2022 – In-class meeting notes
 - Joe not able to attend – sick with flu ?
 - Before going into group breakouts, Arin demonstrated using the .T function in Pandas to transpose columns/rows to address the issue Juhi was having with the Zillow data’s structure
