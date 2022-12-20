@@ -33,7 +33,7 @@ We hope to determine whether a machine learning model can be a helpful tool in r
 
 ## Dashboard
 
-
+Google Slideshow (rough cut, still very much in progress): https://docs.google.com/presentation/d/1kjO0vaHzWOCidoWfdnLT9qGtgoUTodmvxP2sFZ1uGJk/edit#slide=id.p
 
 ## Data Base
 Dependent Variable- Zillow Housing data: https://www.zillow.com/research/data/
