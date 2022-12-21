@@ -34,6 +34,7 @@ We hope to determine whether a machine learning model can be a helpful tool in r
 ## Presentation & Dashboard
 
 Google Slideshow (rough cut, still very much in progress): https://docs.google.com/presentation/d/1kjO0vaHzWOCidoWfdnLT9qGtgoUTodmvxP2sFZ1uGJk/edit#slide=id.p
+
 Tableau Public Workbook (also still very much in progress!): https://public.tableau.com/app/profile/tim5029/viz/Starfall_Dashboard/Story1?publish=yes
 
 ## Data Base
