@@ -27,22 +27,6 @@ We were able to retain the county-based COVID case dataset, but shifted the targ
 ### Data sources
 
 As previously stated, COVID case data by county was sourced from the CDC. Demographic data by county was sourced from the U.S. Census Bureau, Rural-Urban Continuum Codes were sourced from the U.S. Department of Agriculture, and home sales data by county was sourced from Zillow.
-
-### Questions to be answered
-
-We hope to determine whether a machine learning model can be a helpful tool in real estate transactions by answering a number of questions from the datasets. First, are the number of COVID cases in a geographic area impacting housing prices in those areas? Are prices rising where COVID cases are lower, and vice versa? Is the population density of a geographic area the driving force behind higher COVID case numbers, and therefore driving home prices down in those areas? Are home prices in rural, suburban, and urban areas being impacted the same way by COVID cases, or is the rate of home price change different based on these location classifications? And finally, are the findings of the previous questions the same across demographics, or are demographic differences between counties mitigating or amplifying the model's predictive power in some way?
-
-## Presentation & Dashboard
-
-Google Slideshow (rough cut, still very much in progress): https://docs.google.com/presentation/d/1kjO0vaHzWOCidoWfdnLT9qGtgoUTodmvxP2sFZ1uGJk/edit#slide=id.p
-
-Tableau Public Workbook (also still very much in progress!): https://public.tableau.com/app/profile/tim5029/viz/Starfall_Dashboard/Story1?publish=yes
-
-## Data Base
-
-Data was cleaned (removing counties not in the US such as Washington DC or US territories, years not inbetween 2019 and 2021, and missing data).
-### Data Sources
-
 Dependent Variable- Zillow Housing data: https://www.zillow.com/research/data/
 
 Rural vs Urban counties- Rural-Urban Continuum Codes:https://www.ers.usda.gov/data-products/rural-urban-continuum-codes.aspx
@@ -59,51 +43,36 @@ COVID-19 data: https://data.cdc.gov/Public-Health-Surveillance/United-States-COV
 
 FIPS: https://github.com/kjhealy/us-county/blob/master/data/census/fips-by-state.csv
 
-Iteration 1:
-Data was cleaned.
+### Questions to be answered
 
-Income data was cleaned and concatenated into one database. We only kept year, county and income columns.
+We hope to determine whether a machine learning model can be a helpful tool in real estate transactions by answering a number of questions from the datasets. First, are the number of COVID cases in a geographic area impacting housing prices in those areas? Are prices rising where COVID cases are lower, and vice versa? Is the population density of a geographic area the driving force behind higher COVID case numbers, and therefore driving home prices down in those areas? Are home prices in rural, suburban, and urban areas being impacted the same way by COVID cases, or is the rate of home price change different based on these location classifications? And finally, are the findings of the previous questions the same across demographics, or are demographic differences between counties mitigating or amplifying the model's predictive power in some way?
 
-Race data was cleaned and concatenated in one database, and different races we kept were added together from male/female to total. 
+## Presentation & Dashboard
 
-Age/Sex was cleaned and concatenated in one database, age groups, age median, male/female ratio, counties and years will work.
+Google Slideshow (rough cut, still very much in progress): https://docs.google.com/presentation/d/1kjO0vaHzWOCidoWfdnLT9qGtgoUTodmvxP2sFZ1uGJk/edit#slide=id.p
 
-Rural vs Urban counties was kept the same.
+Tableau Public Workbook (also still very much in progress!): https://public.tableau.com/app/profile/tim5029/viz/Starfall_Dashboard/Story1?publish=yes
 
+## Data Base
 
-Needs: Find a way to transpose Zillow data into rows.
+Data was cleaned (removing counties not in the US such as Washington DC or US territories, years not inbetween 2019 and 2021, and missing data).
 
-Iteration 2:
-Originally we got data for the years 2017-2021 after the first round of ML we removed variables.
+Data that had multiple csv's were contacantated into one database, at this point we had 6 databases: income, race/ethnicity, population, Rural/urban, Zillow housing, COVID cases, and Fips. 
+A challange at this point was making the time series Zillow file into multiple rows. This was done using the pd.stack() method. 
 
 All databases were made sure to have either a FIPs, countyname,Statename, or countyname,StateAbrivation so that FIPS database can be used to join all databases. After this we have not yet removed the unneeded columns. 
-
 
 ERD:
 
 ![ERD](https://user-images.githubusercontent.com/109693301/207495541-33df45d6-d182-4eb1-b512-86207fc6ce04.png)
 
+
+
 All tables are connected by fips, fips by year, and fips by year and month. This ERD only contains columns we are going to keep.
 
-For the housing cost Zillow data we used pd.stack() which allowed us to have all cost data to be in rows and indexed by their fips. This allows us to convert time series data into individual instances of data for each county. We went in and manually changed the names of rows because the issue with stack was that we were not able to manipulate the data after. Finally, we broke the dates into months and years to make the fips by year and fips by year and month above. This table is currently under Zillow_int2.csv
+Data was merged into two dataframes in pandas housing/covid data and demographic (population, race/eth, income, and Rural/urban areas). and was uploaded to MongoAtlas. Within SQL we were able to merge this data into merged_data and uploaded into MongoAtlas. All uploads used PyMongo.
 
-All examples of these iterations are currently in the Circle branch.
-
-Needs: Merge data using SQL, and finish cleaning data.
-
-Iteration 3:
-We have cleaned all of the data individually removing all Nan when merging. We have merged the data into 2 dataframes, housing/covid data and demographic (population, race/eth, income, and Rural/urban areas).
-We uploaded these 2 dataframes to Mongo. 
-
-Needs: Merge these two frames in Mongo.
-
-Iteration 4:
-Pivot I merged the data in SQL not mongo as it was not working. The query is schema.sql. The data was then downloaded and uploaded into Mongodb (currently in the github as mergedata.csv in clean data).
-Mongodb has been found to be shared over the cloud via Atlas. This is currently being tested. 
-
-Needs: Mongodb needs to be shared with others.
-=======
-Iterations in detail: (Insert link currently in Circle folder)
+Iterations in detail: (Insert link currently in Circle folder, Circle_roleReadMe.txt)
 
 ## Machine Learning
 
