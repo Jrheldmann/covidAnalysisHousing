@@ -13,20 +13,7 @@
 Communication happens primarily over slack group channel with emergency contact via direct texts between members.
 
 ## Overview 
-<<<<<<< HEAD
-In X role branch
 
-
-## Questions that we hoped to answer and what we did answer
-
-In X role branch
-
-## Dashboard
-
-
-
-## Data Base
-=======
 ### Selected Topic
 
 Team Starfall has chosen to develop a machine learning model to predict the change in housing prices in a given U.S. county based on the number of local COVID cases. Demographic data for each county will also be taken into consideration. In the U.S., there is a wide variety of socioeconomic statuses and pre-existing housing market conditions in a given county. Because buying or selling a home is such a major life event and financial strain, these demographic data must be included because we expect that the predictive power of any model will likely vary from county to county based on some of these factors.
@@ -56,7 +43,6 @@ Tableau Public Workbook (also still very much in progress!): https://public.tabl
 Data was cleaned (removing counties not in the US such as Washington DC or US territories, years not inbetween 2019 and 2021, and missing data).
 ### Data Sources
 
->>>>>>> cb4dcabe8c7fb3c64d8ad103c53281a8832fd46e
 Dependent Variable- Zillow Housing data: https://www.zillow.com/research/data/
 
 Rural vs Urban counties- Rural-Urban Continuum Codes:https://www.ers.usda.gov/data-products/rural-urban-continuum-codes.aspx
@@ -73,7 +59,6 @@ COVID-19 data: https://data.cdc.gov/Public-Health-Surveillance/United-States-COV
 
 FIPS: https://github.com/kjhealy/us-county/blob/master/data/census/fips-by-state.csv
 
-<<<<<<< HEAD
 Iteration 1:
 Data was cleaned.
 
@@ -120,15 +105,11 @@ Needs: Mongodb needs to be shared with others.
 =======
 Iterations in detail: (Insert link currently in Circle folder)
 
-## 
->>>>>>> cb4dcabe8c7fb3c64d8ad103c53281a8832fd46e
-
 ## Machine Learning
 
 ### Linear Regression
 Using the sample_data.csv I focused on the "cases" and "Cost" columns. I used the cases as the feature (independent variable) and the Cost as the target (dependent variable). 
 
-<<<<<<< HEAD
 ![linear_regression](https://user-images.githubusercontent.com/109091887/207204406-b32c8ebe-f1c7-4648-8ab8-610fdaecfeb9.png)
 (my images are not working correctly and I'm still figuring out why)
 
@@ -138,7 +119,6 @@ On Dave's suggestion, I scaled the data for cases and Cost and created a new lin
 ### Neural Network
 Next I decided to include all of the columns besides the C_S column, which represented the county and state. A different column labeled "FIPS" is the US postal code for each row so that represents the location of the successfully with a numerical value. Since all other columns were numerical with a wide range of numbers, I decided to scale each column. Then I began creating a basic neural network. As a preliminary value, I would hope that the basic neural network yields an accuracy score of 50% or above. Based on how successful the model it, I will consider using a deep learning model by creating additional layers and neurons. 
 
-=======
 ![scaled_linear_regression](https://user-images.githubusercontent.com/109091887/208565119-1a69f486-5057-426f-bc0a-daebbb983e16.png)
 {realized i need to label the axises to make the graph easier to read.}
 
@@ -152,7 +132,6 @@ Next I decided to include all of the columns besides the C_S column, which repre
 
 After completing the basic neural network, using all 24 features, and 100 epochs, the accuracy is 0.0. Not the results I was looking for but I think I can improve the accuracy by removing some features. Since the basic neural network wasn't very successful, my next model will be a deep learning model since deep learning models are better at making predictions with many features. At this point, I'm hoping for the deep learning model will result in an accuracy higher than 0.0.
 
->>>>>>> cb4dcabe8c7fb3c64d8ad103c53281a8832fd46e
 ## Conclusion
 
 ## Technology Used
@@ -163,8 +142,5 @@ Jupyter notebook
 
 MongoDB
 
-<<<<<<< HEAD
 Intended use- Tableau
-=======
-Intended use- Tablau
->>>>>>> cb4dcabe8c7fb3c64d8ad103c53281a8832fd46e
+
