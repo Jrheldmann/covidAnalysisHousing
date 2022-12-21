@@ -109,7 +109,9 @@ Pandas
 
 Jupyter notebook
 
-MongoDB
+SQL
+
+MongoDB/MongoAtlas
 
 Intended use- Tableau
 
