@@ -31,6 +31,7 @@ Description of preliminary feature engineering and preliminary feature selection
 ![linear_regression](https://user-images.githubusercontent.com/109091887/209036936-a2f53f8c-03d2-4940-ba62-9372d25c919c.png)
 
 Description of how data was split into training and testing sets
-- 
+- When using the basic neural network, the train_test_split method from the sklearn library will be used. By default, the train size will be we to 0.25. 
 
 Explanation of model choice, including limitations and benefits
+- Using a linear regression model be will beneficial to use if the data continues to stay linear. This will be determined when the entire dataset is imported into the model. If the Covid Cases and House Cost do not have a linear relationship then another model will be considered. Another limitation of this model if the removal of many possible features. These other potential feature may play a big role in making predictions of the target. Other models that are being considered are logisitical regression, PCA, neural networks, and deep learning models. 
