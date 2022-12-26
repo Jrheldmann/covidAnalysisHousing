@@ -1,3 +1,14 @@
+12/21/2022 – In-class meeting notes
+- Apologies from Tim, didn’t manage to get an agenda made for tonight, but, together we established our main goals for tonight are: 
+o Ensure everything is functioning for the Seg 2 deliverable we’re handing in tonight
+o determine progress we each need to make for our 12/27 in-person meeting
+- Tim needed help resolving GitHub branch-jumping issues – Thanks, Joe! – Tim promises to just work on locally-saved files from now on ?? 
+- Tim requested from Juhi to have a column with month/date separate from FIPS for Tableau visualization purposes – resolved – Thanks, Juhi!
+- Juhi noticed a dummy coding issue in one of Will’s models – walked through together and resolved – Thanks Juhi & Will!
+- Some errors connecting Will’s Jupyter Notebook to Juhi’s Mongo DB – walked through this together too and resolved it
+- Everyone agreed on 11AM for the 12/27 meeting @ Barnes & Noble
+o Somerset Shopping Center 319 Route 202/206, Bridgewater Township, NJ 08807
+
 12/19/2022 – In-class meeting notes
 - Health rebound check-in, Joe is feeling better, Juhi’s ankle not broken!
 - Issues with GitHub ReadMes being in conflict – prob a good idea for us each to rename the readme files in our individual branches
@@ -82,10 +93,10 @@ o General weekday work schedules:
 * Juhi works 9-5
 * Tim’s schedule is 24/7 ever-changing chaos as a caregiver, but can generally arrange to be available for meetings/coordinating on any tasks at most times, feel free to contact via text whenever and he can at least respond to keep informed within a half hour
 o Phone numbers:
-* Joe: 908-566-6499
-* Juhi: 908-305-0706
-* Tim: 973-479-2971
-* Will: 732-492-7641
+* Joe: 908-XXX-XXXX
+* Juhi: 908-XXX-XXXX
+* Tim: 973-XXX-XXXX
+* Will: 732-XXX-XXXX
 - Current to do list for each of our roles (named as per the course module):
 o Joe (square): GitHub structure setup and sharing
 * Github usernames:
