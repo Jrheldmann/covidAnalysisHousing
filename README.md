@@ -49,30 +49,37 @@ Using a linear regression model be will beneficial to use if the data continues 
 # Third Segment
 - Description of data preprocessing
 
-Now using the final data set, preprocessing began with removing any rows or columns that contained null values. Due to the data spanning from 2017 to 2021, years 2017 and 2019 were removed in order to not over-fit the pre-covid data. Using years 2019, 2020, and 2021 will allow the machine learning models to make conclusions from data pre-covid, covid's peak, and the covid's tail.
+Now using the final data set, preprocessing began with removing any rows or columns that contained null values. Using years 2019, 2020, and 2021 will allow the machine learning models to make conclusions from data pre-covid, covid's peak, and the covid's tail.
 
 - Description of feature engineering and the feature selection, including the decision-making process
 
-
+Not going to use all features. use linear regression to compare each feature with the targets and check correlation. remove features with correlation close to 0. highlight features with strong correlation. 
 
 - Description of how data was split into training and testing sets
 
 When using the basic neural network, the train_test_split method from the sklearn library will be used. By default, the train size will be we to 0.25. 
 
+Using the MinMaxScaler instead of StandardScaler so that values are scaled from 0 to 1, instead of -1 to 1.
+
+Random Forest comparing predictions against y-test. Test correlation and MSE between these two.
+
 PCA is a statistical technique to speed up machine learning algorithms when the number of input features (or dimensions) is too high. PCA reduces the number of dimensions by transforming a large set of variables into a smaller one that contains most of the information in the original large set.
 
 - Explanation of model choice, including limitations and benefits
+
+
+New Notes: first choice was linear, data doesn't appear to be linear. also compared linear relationship between each feature and target. moved onto basic neural netowrk and deep learning models. also testing random forests. 
 
 Using a linear regression model be will beneficial to use if the data continues to stay linear. This will be determined when the entire dataset is imported into the model. If the Covid Cases and House Cost do not have a linear relationship then another model will be considered. Another limitation of this model if the removal of many possible features. These other potential feature may play a big role in making predictions of the target. Other models that are being considered are logisitical regression, PCA, neural networks, and deep learning models. 
 
 - Explanation of changes in model choice (if changes occurred between the Segment 2 and Segment 3 deliverables)
 
-
+discovering the data is not full linear so we moved away from that. originally testing basic neural networks and deep learning models and achieved 0 accuracy. updated scaler and changed first layer from sigmoid to relu. kept output layer as sigmoid. also testing random forests but uncertain of accuracy yet.
 
 - Description of how they have trained the model thus far, and any additional training that will take place
 
-
+originally the basic neural network was not training the model well. attempts were made to change the number or layers and neurons in each layer. features were removed. after the changing of the scaler and first layer function to relu, additional training will take place using all features. more training will be completed when the correlation is calculated between each feature and target and we are able to narrow features. hopefully this will help the model train the data better. 
 
 - Description of current accuracy score
 
-
+1.826 e-5
