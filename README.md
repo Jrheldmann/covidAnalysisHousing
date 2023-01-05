@@ -8,10 +8,6 @@
 | Tim |Dashboard Lead | Create a dashboard to present the data|
 | Joe| Github Lead | Responsible for updating the repository and ReadMe|
 
-### Communication Protocols
-
-Communication happens primarily over slack group channel with emergency contact via direct texts between members.
-
 ## Overview 
 
 ### Selected Topic
