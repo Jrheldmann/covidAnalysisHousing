@@ -25,17 +25,30 @@ After analysis the  county-based COVID case dataset were retianed, but shifted t
 As previously stated, COVID case data by county was sourced from the CDC. Demographic data by county was sourced from the U.S. Census Bureau, Rural-Urban Continuum Codes were sourced from the U.S. Department of Agriculture, and home sales data by county was sourced from Zillow.
 Dependent Variable- Zillow Housing data: https://www.zillow.com/research/data/
 
+This data is the typical value of a home in a specific county at a specific time.
+
 Rural vs Urban counties- Rural-Urban Continuum Codes:https://www.ers.usda.gov/data-products/rural-urban-continuum-codes.aspx
 
+This is data that the Department of Agriculture uses to determine what counties are Urban vs Rural.
+
 Income per capita- ACS: https://data.census.gov/table?q=B19301:+PER+CAPITA+INCOME+IN+THE+PAST+12+MONTHS+(IN+2021+INFLATION-ADJUSTED+DOLLARS)&g=0100000US,$0500000&tid=ACSDT1Y2021.B19301
+
+This is ACS data from 2019-2021 for per capita income by county.
 
 Population/Age/Sex 2017-2019- CC-EST2020-AGESEX-ALL.csv:https://www2.census.gov/programs-surveys/popest/datasets/2010-2020/counties/asrh/ Race/Ethnicity 2017-2019-CC-EST2020-AL6LDATA.csv:https://www2.census.gov/programs-surveys/popest/datasets/2010-2020/counties/asrh/
 
 Population/Age/Sex 2020-2021 cc-est2021-agesex-all.csv:https://www2.census.gov/programs-surveys/popest/datasets/2020-2021/counties/asrh/
 
+These sets of data are age and sex data for 2019-2021 from the US cenusus. 
+
 Race/Ethnicity 2020-2021 cc-est2021-all.csv:https://www2.census.gov/programs-surveys/popest/datasets/2020-2021/counties/asrh/
 
+These sets of data are race and ethnicity data for 2019-2021 from the US cenusus. 
+
+
 COVID-19 data: https://data.cdc.gov/Public-Health-Surveillance/United-States-COVID-19-Community-Levels-by-County/3nnm-4jni (Split into years for CSV size)
+
+This COVID-10 data is from the CDC. 
 
 FIPS: https://github.com/kjhealy/us-county/blob/master/data/census/fips-by-state.csv
 
