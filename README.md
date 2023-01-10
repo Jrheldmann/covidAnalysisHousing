@@ -16,9 +16,9 @@ Team Starfall has chosen to develop a machine learning model to predict the chan
 
 ### Selection Rationale
 
-Our team initially sought to use COVID datasets to predict spikes in COVID cases in a given U.S. county based on trends in historic weekly COVID data from that county. This seemed like a good topic for its inherent current cultural relevance, as well as the volume of COVID case data publicly available from the Centers for Disease Control (CDC). As per recommendations from the instructor and teaching assistant regarding the scope of that investigation being too large and not having a clearly defined business-use case, we decided to pivot to a modified topic.
+The team initially sought to use COVID datasets to predict spikes in COVID cases in a given U.S. county based on trends in historic weekly COVID data from that county. This seemed like a good topic for its inherent current cultural relevance, as well as the volume of COVID case data publicly available from the Centers for Disease Control (CDC). As per recommendations from the instructor and teaching assistant regarding the scope of that investigation being too large and not having a clearly defined business-use case, we decided to pivot to a modified topic.
 
-We were able to retain the county-based COVID case dataset, but shifted the target prediction to home sales. We felt this was a good compromise to retain our initial interest in a current and impactful topic. While it might seem counter-intuitive, adding the home sales data as a predictive target did actually narrow the scope of the machine learning model. Rather than trying to train a model to use one set of historic COVID data to predict that same type of data might change in the future, we can now use the historic COVID data and the temporally and geographically matched housing data to train a model to only predict the housing data's changes. This is much more likely to lead to a successful machine learning model, and also draws a much clearer picture of how that model can be used for a business use.
+After analysis the  county-based COVID case dataset were retianed, but shifted the target prediction to home sales. This was a good compromise to retain our initial interest in a current and impactful topic. While it might seem counter-intuitive, adding the home sales data as a predictive target did actually narrow the scope of the machine learning model. Rather than trying to train a model to use one set of historic COVID data to predict that same type of data might change in the future, we can now use the historic COVID data and the temporally and geographically matched housing data to train a model to only predict the housing data's changes. This is much more likely to lead to a successful machine learning model, and also draws a much clearer picture of how that model can be used for a business use.
 
 ### Data sources
 
@@ -41,7 +41,25 @@ FIPS: https://github.com/kjhealy/us-county/blob/master/data/census/fips-by-state
 
 ### Questions to be answered
 
-We hope to determine whether a machine learning model can be a helpful tool in real estate transactions by answering a number of questions from the datasets. First, are the number of COVID cases in a geographic area impacting housing prices in those areas? Are prices rising where COVID cases are lower, and vice versa? Is the population density of a geographic area the driving force behind higher COVID case numbers, and therefore driving home prices down in those areas? Are home prices in rural, suburban, and urban areas being impacted the same way by COVID cases, or is the rate of home price change different based on these location classifications? And finally, are the findings of the previous questions the same across demographics, or are demographic differences between counties mitigating or amplifying the model's predictive power in some way?
+Did COVID-19 cases correlate with changes in home prices?
+
+Using x factors can one predict future housing trends?
+
+X:
+
+- Population number
+
+- Rural Urban Continuum provided by the Department of Agriculture
+
+- Median age
+
+- Race/Ethnicity
+
+- Gender ratio
+
+- Per Capita income 
+
+Are home prices in rural, suburban, and urban areas being impacted the same way by COVID cases, or is the rate of home price change different based on these location classifications?
 
 ## Presentation & Dashboard
 
@@ -63,7 +81,6 @@ ERD:
 ![ERD](https://user-images.githubusercontent.com/109693301/207495541-33df45d6-d182-4eb1-b512-86207fc6ce04.png)
 
 
-
 All tables are connected by fips, fips by year, and fips by year and month. This ERD only contains columns we are going to keep.
 
 Data was merged into two dataframes in pandas housing/covid data and demographic (population, race/eth, income, and Rural/urban areas). and was uploaded to MongoAtlas. Within SQL we were able to merge this data into merged_data and uploaded into MongoAtlas. All uploads used PyMongo.
@@ -73,14 +90,12 @@ Iterations in detail: (Insert link currently in Circle folder, Circle_roleReadMe
 ## Machine Learning
 
 ### Linear Regression
-Using the sample_data.csv I focused on the "cases" and "Cost" columns. I used the cases as the feature (independent variable) and the Cost as the target (dependent variable). 
+Using the sample_data.csv focused was placed on the "cases" and "Cost" columns, with the cases as the feature (independent variable) and the Cost as the target (dependent variable). 
 
-On Dave's suggestion, I scaled the data for cases and Cost and created a new linear regression model. The y-intercept changed due to the scaling and the slope changed from 0.06 to 0.08. There is a positive association between cases and Cost. It would be worth looking into the correlation coefficient also to see how strongly correlated the two variables are. 
-
-On Dave's suggestion, I scaled the data for cases and Cost and created a new linear regression model. The y-intercept changed due to the scaling and the slope changed from 0.06 to 0.08. There is a positive association between cases and Cost. It would be worth looking into the correlation coefficient also to see how strongly correlated the two variables are.
+ The data was scaled for cases and Cost and created a new linear regression model. The y-intercept changed due to the scaling and the slope changed from 0.06 to 0.08. There is a positive association between cases and Cost. It would be worth looking into the correlation coefficient also to see how strongly correlated the two variables are. 
 
 ### Logistical Regression
-Next I decided to use logistical regression to attempt to predict Cost based on all the other 24 features in the dataset. I didn't scale the data when setting up the model this time but I think I will after this. After training the data and comparing the predictions to the actual Cost, the accuracy score was 0.0. Obviously these results are less than I had hoped so for my second iteration I'm going to scale the data and potentially remove several features.
+The next step was to look at logistical regression to attempt to predict Cost based on all the other 24 features in the dataset. The data was not scaled. Since Y was binary this model was rejected.
 
 ### Neural Network
 Next I decided to include all of the columns besides the C_S column, which represented the county and state. A different column labeled "FIPS" is the US postal code for each row so that represents the location of the successfully with a numerical value. Since all other columns were numerical with a wide range of numbers, I decided to scale each column. Then I began creating a basic neural network. As a preliminary value, I would hope that the basic neural network yields an accuracy score of 50% or above. Based on how successful the model it, I will consider using a deep learning model by creating additional layers and neurons. 
@@ -106,14 +121,27 @@ Explanation of model choice, including limitations and benefits
 ## Conclusion
 
 ## Technology Used
+#### Data Exploration: 
+Python, SQL, MongoAtlas, MongoDB
 
-Pandas
+#### Data Analysis: 
+Python, Jupyter Notebook, Pandas, Google Collab, Java, Html
 
-Jupyter notebook
+#### Dashboard: 
+Tableau
 
-SQL
+#### Communitication: 
+GitHub, Slack
 
-MongoDB/MongoAtlas
+#### Algorithms: 
+Linear regression
 
-Intended use- Tableau
+### Library
+
+#### Database:
+Pandas, Numpy, Json, PyMongo
+
+#### Data Analysis
+Numpy, Pandas, Collections (Counter), matplotlib (plt), skleran.linear_model (LinearRegression), sklearn.preprocessing (StandardScaler), PyMongo, Json
+
 
