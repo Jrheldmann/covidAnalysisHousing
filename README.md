@@ -96,7 +96,9 @@ ERD:
 
 All tables are connected by fips, fips by year, and fips by year and month. This ERD only contains columns we are going to keep.
 
-Data was merged into two dataframes in pandas housing/covid data and demographic (population, race/eth, income, and Rural/urban areas). and was uploaded to MongoAtlas. Within SQL we were able to merge this data into merged_data and uploaded into MongoAtlas. All uploads used PyMongo.
+Data was merged into two dataframes in pandas housing/covid data and demographic (population, race/eth, income, and Rural/urban areas). This was was uploaded to MongoAtlas. Within SQL we were able to merge both sets of data into merged_data and uploaded into MongoAtlas. All uploads used PyMongo.
+
+After looking at tablaeu it was realized that the New York City did not have any COVID data so that was removed beinging the final number of rows to 95131.
 
 Iterations in detail: (Insert link currently in Circle folder, Circle_roleReadMe.txt)
 
