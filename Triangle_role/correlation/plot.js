@@ -25,17 +25,17 @@
 
 var sortedCorr = featureCorrelations.sort((a,b) => a.Correlation - b.Correlation).reverse(); 
 
-var FeatureCodes = sortedCorr.map(feature => feature.Code);
+var FeatureNames = sortedCorr.map(feature => feature.Feature);
 var FeatureCorr = sortedCorr.map(feature => feature.Correlation);
 
 var trace = {
-    x: FeatureCodes,
+    x: FeatureNames,
     y: FeatureCorr,
     type: "bar"
   };
   var data = [trace];
   var layout = {
-    title: "Correlation with house Cost",
+    title: "Correlation with House Cost",
     xaxis: {title: "Feature" },
     yaxis: {title: "Correlation"}
   };
