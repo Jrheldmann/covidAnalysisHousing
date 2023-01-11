@@ -78,9 +78,9 @@ Are home prices in rural, suburban, and urban areas being impacted the same way 
 
 ## Presentation & Dashboard & Database
 
-Google Slideshow (rough cut, still very much in progress): https://docs.google.com/presentation/d/1kjO0vaHzWOCidoWfdnLT9qGtgoUTodmvxP2sFZ1uGJk/edit#slide=id.p
+Google Slideshow: https://docs.google.com/presentation/d/1kjO0vaHzWOCidoWfdnLT9qGtgoUTodmvxP2sFZ1uGJk/edit#slide=id.p
 
-Tableau Public Workbook (also still very much in progress!): https://public.tableau.com/app/profile/tim5029/viz/Starfall_Dashboard/StarfallTemporaryDashboardIn-Progress?publish=yes
+Tableau Public Workbook: https://public.tableau.com/app/profile/tim5029/viz/Starfall_Dashboard/StarfallDashboard?publish=yes
 
 
 ## Data Base
