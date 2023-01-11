@@ -18,39 +18,40 @@ Team Starfall has chosen to develop a machine learning model to predict the chan
 
 The team initially sought to use COVID datasets to predict spikes in COVID cases in a given U.S. county based on trends in historic weekly COVID data from that county. This seemed like a good topic for its inherent current cultural relevance, as well as the volume of COVID case data publicly available from the Centers for Disease Control (CDC). As per recommendations from the instructor and teaching assistant regarding the scope of that investigation being too large and not having a clearly defined business-use case, we decided to pivot to a modified topic.
 
-After analysis the  county-based COVID case dataset were retianed, but shifted the target prediction to home sales. This was a good compromise to retain our initial interest in a current and impactful topic. While it might seem counter-intuitive, adding the home sales data as a predictive target did actually narrow the scope of the machine learning model. Rather than trying to train a model to use one set of historic COVID data to predict that same type of data might change in the future, we can now use the historic COVID data and the temporally and geographically matched housing data to train a model to only predict the housing data's changes. This is much more likely to lead to a successful machine learning model, and also draws a much clearer picture of how that model can be used for a business use.
+After analysis the  county-based COVID case dataset were retained, but shifted the target prediction to home sales. This was a good compromise to retain our initial interest in a current and impactful topic. While it might seem counter-intuitive, adding the home sales data as a predictive target did actually narrow the scope of the machine learning model. Rather than trying to train a model to use one set of historic COVID data to predict that same type of data might change in the future, we can now use the historic COVID data and the temporally and geographically matched housing data to train a model to only predict the housing data's changes. This is much more likely to lead to a successful machine learning model, and also draws a much clearer picture of how that model can be used for a business use.
 
 ### Data sources
 
 As previously stated, COVID case data by county was sourced from the CDC. Demographic data by county was sourced from the U.S. Census Bureau, Rural-Urban Continuum Codes were sourced from the U.S. Department of Agriculture, and home sales data by county was sourced from Zillow.
 Dependent Variable- Zillow Housing data: https://www.zillow.com/research/data/
 
-This data is the typical value of a home in a specific county at a specific time.
+* This data is the typical value of a home in a specific county at a specific time.
 
 Rural vs Urban counties- Rural-Urban Continuum Codes:https://www.ers.usda.gov/data-products/rural-urban-continuum-codes.aspx
 
-This is data that the Department of Agriculture uses to determine what counties are Urban vs Rural.
+* This is data that the Department of Agriculture uses to determine what counties are Urban vs Rural.
 
 Income per capita- ACS: https://data.census.gov/table?q=B19301:+PER+CAPITA+INCOME+IN+THE+PAST+12+MONTHS+(IN+2021+INFLATION-ADJUSTED+DOLLARS)&g=0100000US,$0500000&tid=ACSDT1Y2021.B19301
 
-This is ACS data from 2019-2021 for per capita income by county.
+* This is ACS data from 2019-2021 for per capita income by county.
 
 Population/Age/Sex 2017-2019- CC-EST2020-AGESEX-ALL.csv:https://www2.census.gov/programs-surveys/popest/datasets/2010-2020/counties/asrh/ Race/Ethnicity 2017-2019-CC-EST2020-AL6LDATA.csv:https://www2.census.gov/programs-surveys/popest/datasets/2010-2020/counties/asrh/
 
 Population/Age/Sex 2020-2021 cc-est2021-agesex-all.csv:https://www2.census.gov/programs-surveys/popest/datasets/2020-2021/counties/asrh/
 
-These sets of data are age and sex data for 2019-2021 from the US cenusus. 
+* These sets of data are age and sex data for 2019-2021 from the US cenusus. 
 
 Race/Ethnicity 2020-2021 cc-est2021-all.csv:https://www2.census.gov/programs-surveys/popest/datasets/2020-2021/counties/asrh/
 
-These sets of data are race and ethnicity data for 2019-2021 from the US cenusus. 
-
+* These sets of data are race and ethnicity data for 2019-2021 from the US cenusus. 
 
 COVID-19 data: https://data.cdc.gov/Public-Health-Surveillance/United-States-COVID-19-Community-Levels-by-County/3nnm-4jni (Split into years for CSV size)
 
-This COVID-10 data is from the CDC. 
+* This COVID-10 data is from the CDC. 
 
 FIPS: https://github.com/kjhealy/us-county/blob/master/data/census/fips-by-state.csv
+
+* This reflects fips data. FIPS is the code that the US uses to catagorize each county in the US.
 
 ### Questions to be answered
 
@@ -74,11 +75,12 @@ X:
 
 Are home prices in rural, suburban, and urban areas being impacted the same way by COVID cases, or is the rate of home price change different based on these location classifications?
 
-## Presentation & Dashboard
+## Presentation & Dashboard & Database
 
-Google Slideshow (rough cut, still very much in progress): https://docs.google.com/presentation/d/1kjO0vaHzWOCidoWfdnLT9qGtgoUTodmvxP2sFZ1uGJk/edit#slide=id.p
+Google Slideshow: https://docs.google.com/presentation/d/1kjO0vaHzWOCidoWfdnLT9qGtgoUTodmvxP2sFZ1uGJk/edit#slide=id.p
 
-Tableau Public Workbook (also still very much in progress!): https://public.tableau.com/app/profile/tim5029/viz/Starfall_Dashboard/StarfallTemporaryDashboardIn-Progress?publish=yes
+Tableau Public Workbook: https://public.tableau.com/app/profile/tim5029/viz/Starfall_Dashboard/StarfallDashboard?publish=yes
+
 
 ## Data Base
 
@@ -100,7 +102,11 @@ Data was merged into two dataframes in pandas housing/covid data and demographic
 
 After looking at tablaeu it was realized that the New York City did not have any COVID data so that was removed beinging the final number of rows to 95131.
 
+Final database both in MongoDB but also in Circle folder under merged_data
+
 Iterations in detail: (Insert link currently in Circle folder, Circle_roleReadMe.txt)
+
+Using PyMongo the data was connected to the machine learning.
 
 ## Machine Learning
 
@@ -134,6 +140,24 @@ Explanation of model choice, including limitations and benefits
 - Using a linear regression model be will beneficial to use if the data continues to stay linear. This will be determined when the entire dataset is imported into the model. If the Covid Cases and House Cost do not have a linear relationship then another model will be considered. Another limitation of this model if the removal of many possible features. These other potential feature may play a big role in making predictions of the target. Other models that are being considered are logisitical regression, PCA, neural networks, and deep learning models. 
 
 ## Conclusion
+Ultimately, the results demonstrate that 'Per Capita Income' was the largest factor in regards to Typical Housing Value and that there isn't a strong correlation between the Covid Cases Total and Typical Housing Value despite an obvious skew in value across metro, metro-adjacent, and rural designated counties. 
+Sadly, Deep Learning didn't prove compatible with the available data due to high loss values.
+
+## Future Work
+
+* Add in 2022 data when it becomes available
+* Conduct a literature review of past economic research into housing market fluctuations
+* Consider alternative analogous measures (e.g. population density of a county rather than RUCC, GDP of a county rather than income per capita)
+* Account for changes in relative numbers of renters vs. owners, changes in rent prices
+* Comparative analysis of vaccine hesitancy and vaccine uptake by county
+* Explore alternative methods for addressing outliers and missing data
+* Address discrepancies between county population & case numbers (e.g. Los Angeles County)
+
+## What would we change?
+
+* Look at demographics as percentages instead of raw numbers
+* Find COVID case data for New York City
+
 
 ## Technology Used
 #### Data Exploration: 
@@ -158,4 +182,3 @@ Pandas, Numpy, Json, PyMongo
 
 #### Data Analysis
 Numpy, Pandas, Collections (Counter), matplotlib (plt), skleran.linear_model (LinearRegression), sklearn.preprocessing (StandardScaler), PyMongo, Json
-
