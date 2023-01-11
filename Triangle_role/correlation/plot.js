@@ -31,12 +31,19 @@ var FeatureCorr = sortedCorr.map(feature => feature.Correlation);
 var trace = {
     x: FeatureNames,
     y: FeatureCorr,
+    marker:{
+      color: ['green', 'yellow', 'red']
+    },
     type: "bar"
   };
   var data = [trace];
   var layout = {
     title: "Correlation with House Cost",
     xaxis: {title: "Feature" },
-    yaxis: {title: "Correlation"}
+    yaxis: {
+      title: "Correlation", 
+      range: [-0.05, 0.75],
+      dtick: 0.05
+    },
   };
   Plotly.newPlot("bar-plot", data, layout);
