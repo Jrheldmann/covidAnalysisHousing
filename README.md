@@ -18,7 +18,7 @@ Team Starfall has chosen to develop a machine learning model to predict the chan
 
 The team initially sought to use COVID datasets to predict spikes in COVID cases in a given U.S. county based on trends in historic weekly COVID data from that county. This seemed like a good topic for its inherent current cultural relevance, as well as the volume of COVID case data publicly available from the Centers for Disease Control (CDC). As per recommendations from the instructor and teaching assistant regarding the scope of that investigation being too large and not having a clearly defined business-use case, we decided to pivot to a modified topic.
 
-After analysis the  county-based COVID case dataset were retianed, but shifted the target prediction to home sales. This was a good compromise to retain our initial interest in a current and impactful topic. While it might seem counter-intuitive, adding the home sales data as a predictive target did actually narrow the scope of the machine learning model. Rather than trying to train a model to use one set of historic COVID data to predict that same type of data might change in the future, we can now use the historic COVID data and the temporally and geographically matched housing data to train a model to only predict the housing data's changes. This is much more likely to lead to a successful machine learning model, and also draws a much clearer picture of how that model can be used for a business use.
+After analysis the  county-based COVID case dataset were retained, but shifted the target prediction to home sales. This was a good compromise to retain our initial interest in a current and impactful topic. While it might seem counter-intuitive, adding the home sales data as a predictive target did actually narrow the scope of the machine learning model. Rather than trying to train a model to use one set of historic COVID data to predict that same type of data might change in the future, we can now use the historic COVID data and the temporally and geographically matched housing data to train a model to only predict the housing data's changes. This is much more likely to lead to a successful machine learning model, and also draws a much clearer picture of how that model can be used for a business use.
 
 ### Data sources
 
@@ -44,7 +44,6 @@ Population/Age/Sex 2020-2021 cc-est2021-agesex-all.csv:https://www2.census.gov/p
 Race/Ethnicity 2020-2021 cc-est2021-all.csv:https://www2.census.gov/programs-surveys/popest/datasets/2020-2021/counties/asrh/
 
 * These sets of data are race and ethnicity data for 2019-2021 from the US cenusus. 
-
 
 COVID-19 data: https://data.cdc.gov/Public-Health-Surveillance/United-States-COVID-19-Community-Levels-by-County/3nnm-4jni (Split into years for CSV size)
 
@@ -183,5 +182,3 @@ Pandas, Numpy, Json, PyMongo
 
 #### Data Analysis
 Numpy, Pandas, Collections (Counter), matplotlib (plt), skleran.linear_model (LinearRegression), sklearn.preprocessing (StandardScaler), PyMongo, Json
-
-
