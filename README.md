@@ -135,6 +135,22 @@ Explanation of model choice, including limitations and benefits
 
 ## Conclusion
 
+## Future Work
+
+* Add in 2022 data when it becomes available
+* Conduct a literature review of past economic research into housing market fluctuations
+* Consider alternative analogous measures (e.g. population density of a county rather than RUCC, GDP of a county rather than income per capita)
+* Account for changes in relative numbers of renters vs. owners, changes in rent prices
+* Comparative analysis of vaccine hesitancy and vaccine uptake by county
+* Explore alternative methods for addressing outliers and missing data
+* Address discrepancies between county population & case numbers (e.g. Los Angeles County)
+
+## What would we change?
+
+* Look at demographics as percentages instead of raw numbers
+* Find COVID case data for New York City
+
+
 ## Technology Used
 #### Data Exploration: 
 Python, SQL, MongoAtlas, MongoDB
