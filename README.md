@@ -80,7 +80,6 @@ Google Slideshow (rough cut, still very much in progress): https://docs.google.c
 
 Tableau Public Workbook (also still very much in progress!): https://public.tableau.com/app/profile/tim5029/viz/Starfall_Dashboard/StarfallTemporaryDashboardIn-Progress?publish=yes
 
-MongoDB Atlas Database: https://cloud.mongodb.com/v2/639fcf7fd9760e1ae9958924#/clusters/detail/HousingCovid
 
 ## Data Base
 
@@ -101,6 +100,8 @@ All tables are connected by fips, fips by year, and fips by year and month. This
 Data was merged into two dataframes in pandas housing/covid data and demographic (population, race/eth, income, and Rural/urban areas). This was was uploaded to MongoAtlas. Within SQL we were able to merge both sets of data into merged_data and uploaded into MongoAtlas. All uploads used PyMongo.
 
 After looking at tablaeu it was realized that the New York City did not have any COVID data so that was removed beinging the final number of rows to 95131.
+
+Final database both in MongoDB but also in Circle folder under merged_data
 
 Iterations in detail: (Insert link currently in Circle folder, Circle_roleReadMe.txt)
 
