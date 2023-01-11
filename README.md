@@ -75,11 +75,11 @@ X:
 
 Are home prices in rural, suburban, and urban areas being impacted the same way by COVID cases, or is the rate of home price change different based on these location classifications?
 
-## Presentation & Dashboard & Database
+## Presentation & Dashboard
 
 Google Slideshow: https://docs.google.com/presentation/d/1kjO0vaHzWOCidoWfdnLT9qGtgoUTodmvxP2sFZ1uGJk/edit#slide=id.p
 
-Tableau Public Workbook: https://public.tableau.com/app/profile/tim5029/viz/Starfall_Dashboard/StarfallDashboard?publish=yes
+Dashboard (published via Tableau Public): https://public.tableau.com/app/profile/tim5029/viz/Starfall_Dashboard/StarfallDashboard?publish=yes
 
 
 ## Data Base
