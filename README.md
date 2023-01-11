@@ -105,6 +105,8 @@ Final database both in MongoDB but also in Circle folder under merged_data
 
 Iterations in detail: (Insert link currently in Circle folder, Circle_roleReadMe.txt)
 
+Using PyMongo the data was connected to the machine learning.
+
 ## Machine Learning
 
 ### Linear Regression
