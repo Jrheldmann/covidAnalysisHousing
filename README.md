@@ -141,6 +141,8 @@ Explanation of model choice, including limitations and benefits
 - Using a linear regression model be will beneficial to use if the data continues to stay linear. This will be determined when the entire dataset is imported into the model. If the Covid Cases and House Cost do not have a linear relationship then another model will be considered. Another limitation of this model if the removal of many possible features. These other potential feature may play a big role in making predictions of the target. Other models that are being considered are logisitical regression, PCA, neural networks, and deep learning models. 
 
 ## Conclusion
+Ultimately, the results demonstrate that 'Per Capita Income' was the largest factor in regards to Typical Housing Value and that there isn't a strong correlation between the Covid Cases Total and Typical Housing Value despite an obvious skew in value across metro, metro-adjacent, and rural designated counties. 
+Sadly, Deep Learning didn't prove compatible with the available data due to high loss values.
 
 ## Future Work
 
