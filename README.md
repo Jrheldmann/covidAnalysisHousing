@@ -104,7 +104,7 @@ After looking at tablaeu it was realized that the New York City did not have any
 
 Final database both in MongoDB but also in Circle folder under merged_data
 
-Iterations in detail: (Insert link currently in Circle folder, Circle_roleReadMe.txt)
+Iterations in detail: [Databasedocumentation.docx](https://github.com/Jrheldmann/Starfall/files/10396325/Databasedocumentation.1.docx)
 
 Using PyMongo the data was connected to the machine learning.
 
